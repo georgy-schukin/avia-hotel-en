@@ -1065,7 +1065,7 @@
 
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
-    $.fn[ pluginName ] = function( options ) {
+    $.fn.twidget = function( options ) {
         return this.each( function() {
             if ( !$.data( this, "plugin_" + pluginName ) ) {
                 $.data( this, "plugin_" +
